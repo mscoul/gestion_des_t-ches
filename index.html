@@ -7,64 +7,134 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<body>
-    <div class="container">
-            <div id="custom-search-input">
-                    <div class="input-group col-md-12">
-                        <input type="text" class="form-control input-lg" placeholder="Buscar" />
-                        <span class="input-group-btn">
-                            <button class="btn btn-info btn-lg" type="button">
-                                <i class="glyphicon glyphicon-search"></i>
-                            </button>
-                        </span>
-             
-                </div> 
-            </div>  
+<body>   
+    <div id="custom-search-input">
+        <div class="input-group col-md-12">
+            <input type="text" class="form-control input-lg" placeholder="Buscar" />
+            <span class="input-group-btn">
+                <button class="btn btn-info btn-lg" type="button">
+                        <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </span>            
+        </div> 
+    </div>   
+    <div class="container"> 
         <div class="container2">
-            <header class="headerBacklog">
+            <header id="headerBacklog">
                 <h2>BACKLOG</h2>
-                <button id="btnHeader">+</button>
+                <button id="btnHeader"><i class="fas fa-plus"></i></button>
             </header> 
-           <!-- <div class="container 3">
+           <div class="container 3">
                 <div id="task1Todo">
+                    <div class="menu">
+                        <h3>Task1-title</h3>
+                        <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
+                    </div>
+                    
                     <div class="check">
-                        <input type="checkbox">
-                        <label for="">subtask</label>
-                    </div>
-                    </div>
-                    <div class="add">
-                        <button></button>
-                        <input type="text">
-                        <ul>
-                            <li>tobacklog</li>
-                            <li>Ongoing</li>
-                            <li>Done</li>
-                            <li><button>Delete</button></li>
-                        </ul>
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-1</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-2</label>   
+                        </div>
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-3</label>
+                        </div>                                               
+                    </div>                  
+                <div id="add">
+                        <button id="addTodo"><i class="fas fa-pen"></i></button>
+                        <!-- <input type="text"> -->
+                        <button id="clickList"><i class="fas fa-ellipsis-v"></i></button>                       
+                </div>                   
                 </div>
             </div>                
-            <button>+ add new task</button>         -->
+            <!-- <button id="addNewTask"><i class="fas fa-plus"> add new task</button>         -->
         </div>
        <div class="container2">
-            <header class="headerTodo">
+            <header id="headerTodo">
                 <h2>TODO</h2>
             </header>
             <div class="container3">
+                <div class="task">
+                    <div class="menu">
+                        <h3>Task1-title</h3>
+                        <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
+                    </div>                            
+                    <div class="check">
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-1</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-2</label>   
+                        </div>
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-3</label>
+                        </div>                                               
+                    </div>
+                </div>                       
             </div>                
         </div>
         <div class="container2">
-            <header class="headerOngoing">
+            <header id="headerOngoing">
                 <h2>ONGOING</h2>
             </header>
             <div class="container3">
+                <div class="task">
+                    <div class="menu">
+                        <h3>Task1-title</h3>
+                        <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
+                    </div>                           
+                    <div class="check">
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-1</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-2</label>   
+                        </div>
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-3</label>
+                        </div>                                               
+                    </div>
+                </div>  
             </div>                
         </div>
         <div class="container2">
-            <header class="headerDone">
+            <header id="headerDone">
                 <h2>DONE</h2>
             </header>
             <div class="container3">
+                <div class="task">
+                    <div class="menu">
+                        <h3>Task1-title</h3>
+                        <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
+                    </div>                            
+                    <div class="check">
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-1</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-2</label>   
+                        </div>
+                        <div class="checkbox">
+                            <input class="inputCheckbox" type="checkbox">
+                            <label for="">subtask-3</label>
+                        </div>                                               
+                    </div>
+                </div>                       
             </div>                
         </div> 
     </div>
