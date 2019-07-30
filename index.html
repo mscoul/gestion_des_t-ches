@@ -4,142 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Application web</title>   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>   
-    <div id="custom-search-input">
-        <div class="input-group col-md-12">
-            <input type="text" class="form-control input-lg" placeholder="Buscar" />
-            <span class="input-group-btn">
-                <button class="btn btn-info btn-lg" type="button">
-                        <i class="glyphicon glyphicon-search"></i>
-                </button>
-            </span>            
-        </div> 
-    </div>   
-    <div class="container"> 
-        <div class="container2">
-            <header id="headerBacklog">
-                <h2>BACKLOG</h2>
-                <button id="btnHeader"><i class="fas fa-plus"></i></button>
-            </header> 
-           <div class="container 3">
-                <div id="task1Todo">
-                    <div class="menu">
-                        <h3>Task1-title</h3>
-                        <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
-                    </div>
-                    
-                    <div class="check">
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-1</label>
-                        </div>
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-2</label>   
-                        </div>
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-3</label>
-                        </div>                                               
-                    </div>                  
-                <div id="add">
-                        <button id="addTodo"><i class="fas fa-pen"></i></button>
-                        <!-- <input type="text"> -->
-                        <button id="clickList"><i class="fas fa-ellipsis-v"></i></button>                       
-                </div>                   
+    <div class="container-fluid">
+        <div class="container">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
                 </div>
-            </div>                
-            <!-- <button id="addNewTask"><i class="fas fa-plus"> add new task</button>         -->
+            </div> 
+            <!--Fin de la search bar-->    
+            <div class="row">
+                <div class="col-md-3">
+                    <header id="headerBacklog">
+                        <h2>BACKLOG</h2>
+                        <button id="btnHeader"><i class="fas fa-plus"></i></button>
+                    </header> 
+                    <div class="container2">
+                        <div id="task1Todo">
+                            <div class="menu">
+                                <h3>Task1-title</h3>
+                                <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
+                            </div>          
+                            <div class="check">
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-1</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-2</label>   
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-3</label>
+                                </div>                                               
+                            </div>                  
+                            <div id="add">
+                                <button id="addTodo"><i class="fas fa-pen"></i></button>
+                                <!-- <input type="text"> -->
+                                <button id="clickList"><i class="fas fa-ellipsis-v"></i></button>                       
+                            </div>                   
+                        </div>
+                        <button id="addNewTask"><i class="fas fa-plus"> add new task</i></button>                                           
+                    </div>  
+                    <!--Fin du container2-->                    
+                </div>
+                <!--Fin du col-md-3-->
+                <div class="col-md-3">
+                    <header id="headerTodo">
+                        <h2>TODO</h2>
+                    </header>
+                    <div class="container2">
+                        <div class="task">
+                            <div class="menu">
+                                <h3>Task1-title</h3>
+                                <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
+                            </div>                            
+                            <div class="check">
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-1</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-2</label>   
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-3</label>
+                                </div>                                               
+                            </div>
+                        </div>                       
+                    </div>  
+                    <!--Fin du container2-->                
+                </div>
+                <!--Fin du col-md-3-->
+                <div class="col-md-3">
+                    <header id="headerOngoing">
+                        <h2>ONGOING</h2>
+                    </header>
+                    <div class="container2">
+                        <div class="task">
+                            <div class="menu">
+                                <h3>Task1-title</h3>
+                                <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
+                            </div>                           
+                            <div class="check">
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-1</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-2</label>   
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-3</label>
+                                </div>                                               
+                            </div>
+                        </div>  
+                    </div>     
+                    <!--Fin du container2-->             
+                </div>
+                <!--Fin du col-md-3-->
+                <div class="col-md-3">
+                    <header id="headerDone">
+                        <h2>DONE</h2>
+                    </header>
+                    <div class="container2">
+                        <div class="task">
+                            <div class="menu">
+                                <h3>Task1-title</h3>
+                                <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
+                            </div>                            
+                            <div class="check">
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-1</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-2</label>   
+                                </div>
+                                <div class="checkbox">
+                                    <input class="inputCheckbox" type="checkbox">
+                                    <label for="">subtask-3</label>
+                                </div>                                               
+                            </div>
+                        </div>                       
+                    </div>   
+                    <!--Fin du container2-->              
+                </div> 
+                <!--Fin du col-md-3-->
+            </div>  
+            <!--Fin du row-->
         </div>
-       <div class="container2">
-            <header id="headerTodo">
-                <h2>TODO</h2>
-            </header>
-            <div class="container3">
-                <div class="task">
-                    <div class="menu">
-                        <h3>Task1-title</h3>
-                        <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
-                    </div>                            
-                    <div class="check">
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-1</label>
-                        </div>
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-2</label>   
-                        </div>
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-3</label>
-                        </div>                                               
-                    </div>
-                </div>                       
-            </div>                
-        </div>
-        <div class="container2">
-            <header id="headerOngoing">
-                <h2>ONGOING</h2>
-            </header>
-            <div class="container3">
-                <div class="task">
-                    <div class="menu">
-                        <h3>Task1-title</h3>
-                        <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
-                    </div>                           
-                    <div class="check">
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-1</label>
-                        </div>
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-2</label>   
-                        </div>
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-3</label>
-                        </div>                                               
-                    </div>
-                </div>  
-            </div>                
-        </div>
-        <div class="container2">
-            <header id="headerDone">
-                <h2>DONE</h2>
-            </header>
-            <div class="container3">
-                <div class="task">
-                    <div class="menu">
-                        <h3>Task1-title</h3>
-                        <button id="btnMenu"><i class="fas fa-angle-down"></i></button>
-                    </div>                            
-                    <div class="check">
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-1</label>
-                        </div>
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-2</label>   
-                        </div>
-                        <div class="checkbox">
-                            <input class="inputCheckbox" type="checkbox">
-                            <label for="">subtask-3</label>
-                        </div>                                               
-                    </div>
-                </div>                       
-            </div>                
-        </div> 
+        <!--Fin du container-->
     </div>
- 
-    <script src="./index.js"></script>
-    
+    <!--Fin du container-fluid-->
+    <script src="./index.js"></script>   
 </body>
 </html>

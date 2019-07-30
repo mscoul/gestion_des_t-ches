@@ -1,105 +1,13 @@
-.container2{
-    min-height: 800px;
-    border: 3px solid #ebebeb;
-    border-radius: 5px;
-    width: 20%;   
+*{
+    margin: 0;
+    padding: 0;
 }
-
-header{
-    width: 100%;
-}
+/*Fin du reset*/
 #headerBacklog{
+    background-color: #ebebeb;  
     display: flex;
-    background-color: #ebebeb;
-    justify-content:space-around;
-    font-size: 15px;
-
-    
+    justify-content: space-around;   
 }
-
-h2{
-    display: inline-block;
-    color: #8c8c8c;   
-}
-
-
-#btnHeader{
-    border: none;
-    display: inline-block;
-    background-color: #ebebeb;
-}
-
-.container3{
-    padding: 15px;
-}
-
-#task1Todo{
-    background-color: #85c3f8;
-    width: 100%;
-}
-
-.task{
-    background-color: #85c3f8;
-    width: 100%;
-}
-
-#btnMenu{
-    display: inline-block;
-    border: none;
-    background: none;
-}
-
-.menu{
-    display: flex;
-    justify-content:space-around;   
-}
-
-h3{
-    display: inline-block;
-    
-}
-
-.check{
-    flex-direction: column;
-    background-color: #1d8bf1;   
-    
-}
-
-.inputCheckbox{
-    margin-left: 15px;
-
-}
-
-#add{
-    display: flex;
-    margin-top: 3px;
-    background-color: #1d8bf1;
-    justify-content: space-around;
-}
-
-#addTodo{
-    display: inline-block;
-    background: none;
-    border: none;
-
-}
-
-#clickList{
-    display: inline-block;
-    background: none;
-    border: none;
-
-}
-       
-#addNewTask{
-    width: 89%;
-    margin: 0 auto;
-    display: block;
-}
-
-
-
-
 
 #headerTodo{
     background-color: #febe36;
@@ -113,16 +21,94 @@ h3{
     background-color: #52af52;
 } 
 
-.container{
-     display: flex;
-     justify-content: space-between;
-     
-} 
-
-#custom-search-input{
-    width: 76%;
-    margin: 0 auto;
+h2{
+    color: #8c8c8c;  
+    display: inline-block;
+    font-size: 20px;       
 }
+
+#btnHeader{
+    background: none; 
+    border: none;
+    display: inline-block;    
+}
+/*Fin des headers*/
+
+.container2{   
+    border: 1px solid #ebebeb;
+    border-radius: 5px; 
+    padding: 5px;   
+}
+
+#task1Todo{
+    background-color: #85c3f8;    
+}
+
+.task{
+    background-color: #85c3f8;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+h3{
+    display: inline-block;
+    font-size: 15px;
+}
+
+#btnMenu{
+    background: none;
+    border: none;
+    display: inline-block;    
+}
+/*Fin du menu*/
+
+.check{
+    background-color: #1d8bf1;    
+}
+
+.inputCheckbox{
+    margin-left: 15px;
+}
+/*Fin de la partie checkbox*/
+
+#add{
+    background-color: #1d8bf1; 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3px;    
+}
+
+#addTodo{
+    background: none;
+    border: none;
+    display: inline-block;
+}
+
+#clickList{   
+    background: none;
+    border: none;
+    display: inline-block;
+}
+/*Fin de la partie add*/
+
+/*Fin du container2*/
+       
+#addNewTask{
+    width: 100%;
+    text-align: center;
+    color: #8c8c8c;
+}
+/*Fin du btn add*/
+
+
+
+
+
+
+
 
 
 
