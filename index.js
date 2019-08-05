@@ -18,7 +18,7 @@
   }
 ]
 */
-let taches = [
+var taches = [
     {
       "_id": "5d48170fd19c26d9c3b05f86",
       "status": "done",
@@ -111,3 +111,18 @@ let taches = [
       ]
     }
   ]
+
+$(function() {
+
+    var tasksElements = taches.reduce( function(allAtasks, currentTask) {
+        return allAtasks + '<li class="list-group-item">' +currentTask.titre+ '</li>';
+    }, '')
+
+    $('#list-data').append('<ul class="list-group">' +tasksElements+ '</ul>')
+
+    /* $('#list-data').append('<ul class="list-group">');
+    for(var i=0; i<taches.length; i++) {
+        $('#list-data .list-group').append('<li class="list-group-item">' +taches[i].titre+ '</li>')
+    }
+    $('#list-data').append('</ul>'); */
+});
